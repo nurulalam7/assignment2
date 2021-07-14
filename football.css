@@ -1,0 +1,141 @@
+.field{
+    display: flex;
+    background-color: rgb(234, 229, 240);
+    margin-left: 30px;
+    border: 1px solid;
+    
+
+}
+.live{
+    height: 40px;
+    width: 90px;
+    border-radius: 8%;
+    color: rgb(234, 229, 240);
+    background-color: rebeccapurple;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    color: purple;
+}
+img{
+    height: 300px;
+    width: 200px;
+    padding-top: 80px;
+    transition: trasfomr 3s ease-in;
+    
+    
+    
+
+}
+.field .player{
+    padding-left: 600px;
+    padding-bottom: 30px;
+}
+.field .title{
+    padding: 40px;
+}
+.field .ball{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color:red;
+}
+.field:hover .player{
+    transform: rotate(20deg);
+    transform-origin:top right ;
+}
+.ball{
+    
+    position: relative;
+    left: 590px;
+    bottom: 115px;
+    transition: transform 2s ease-out ;
+    
+}
+.field:hover .ball{
+    transform: translate(-200px,-250px);
+}
+.information{
+    margin: 20px;
+}
+.list{
+    border: 1px solid;
+    height: 450px;
+    width:300px;
+    border-radius: 10px;
+    position: relative;
+    padding: 30px;
+    box-shadow: 5px 5px 5px green;
+}
+.description{
+    position: absolute;
+    display: none;
+    
+
+}
+.photo{
+    
+}
+.list:hover .description{
+    display: block;
+}
+.top-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    padding: 20px;
+}
+.america{
+    display: flex;
+    background-color: rgb(234, 229, 240);
+    margin-left: 30px;
+    
+    
+}
+.highlight{
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    margin: 40px;
+    padding: 39px;
+    background-color: cornsilk;
+    box-shadow: 5px 5px 5px;
+}
+.highlight a{
+
+    height: 40px;
+    width: 90px;
+    border-radius: 8%;
+    color: rgb(234, 229, 240);
+    background-color: rebeccapurple;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.logo{
+    text-align: center;
+}
+.icon{
+    text-align: center;
+    
+}
+.copy{
+    text-align: center;
+}
+@media only screen and (max-width:680px){
+    section{
+        width:100px;
+    }
+    .top-list, .field, .america{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .list, .field, .america{
+        flex-direction: column;
+    }
+    
+
+
+
+
+
